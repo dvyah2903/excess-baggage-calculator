@@ -60,6 +60,11 @@ class _BaggageCalculatorPageState extends State<BaggageCalculatorPage> {
 
   void _calculateFee() {
     if (!_formKey.currentState!.validate()) {
+      setState(() {
+        _excessWeight = null;
+        _excessCharge = null;
+        _totalPayable = null;
+      });
       return;
     }
 

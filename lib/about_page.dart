@@ -10,7 +10,7 @@ class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
   static const String githubUrl =
-      'https://github.com/your-username/your-repository';
+      'https://github.com/dvyah2903/excess-baggage-calculator';
 
   Future<void> _openGitHub(BuildContext context) async {
     final Uri url = Uri.parse(githubUrl);
